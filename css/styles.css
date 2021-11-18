@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap');
+
+body {
+    margin: 0;
+}
+
+div {
+    font-family: "Fira Sans", sans-serif;
+}
+
+.banner {
+    width: 100%;
+}
+
+.name-and-logo {
+    position: absolute;
+    color: #ff7f2a;
+    font-size: 4.8vw;
+    right: 0;
+    top: 0;
+    text-align: right;
+    background: black;
+    padding: 4vw 4vw 7vw 7vw;
+    z-index: -1;
+}
+
+.name-and-logo > img {
+    width: 20vw;
+    margin: 3vw;
+    z-index: 1;
+}
+
+.content {
+    padding: 2vw;
+}
+
+.content > h1 {
+    font-size: min(5vw, 2.5rem);
+    font-family: "Fira Sans", sans-serif;
+    margin-top: 2rem;
+}
+
+.content > h1 > .w-word {
+    display: inline;
+    color: #ff7f2a;
+}
+
+.content > div {
+    padding-left: 2vw;
+    padding-right: 2vw;
+    margin-bottom: 0.7em;
+}
+
+@media screen and (min-width: 900px) {
+    .content {
+        width: 800px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+a, a:visited {
+    color: darkgray;
+}
+
+#cars-description > div {
+    float: left;
+    width: 40%;
+    margin: 0 2%
+}
+
+#cars-description > div > img {
+    display: block;
+    width: 80%;
+    margin: 2rem auto;
+}
+
+#cars-description > div > div {
+    text-align: center;
+    margin: 1rem;
+}
+
+#cars-description:after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+.car-name {
+    font-weight: bold;
+}
+
+.cars-map {
+    display: block;
+    border: none;
+    width: 100%;
+    height: 400px;
+}
+
+li {
+    margin-top: 0.5rem;
+}
+
+li > div {
+    font-weight: bold;
+}
+
+img.big {
+    display: block;
+    width: 100%;
+    margin: 0.5em 0;
+}

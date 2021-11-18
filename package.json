@@ -1,0 +1,36 @@
+{
+    "title": "EnAT Homepage",
+    "name": "enat-homepage",
+    "version": "0.0.1",
+    "scripts": {
+        "build": "npm run clean && npm run build:pug",
+        "build:pug": "node scripts/build-pug.js",
+        "clean": "node scripts/clean.js",
+        "start": "npm run build && node scripts/start.js",
+        "start:debug": "npm run build && node scripts/start-debug.js"
+    },
+    "description": "Homepage for Bad Endorfer AutoTeiler e.V.",
+    "keywords": [
+        "carsharing",
+        "enat"
+    ],
+    "homepage": "https://endorder-autoteiler.de",
+    "bugs": {
+        "url": "https://github.com/###",
+        "email": "tlma@posteo.de"
+    },
+    "license": "MIT",
+    "author": "Robert H�lzl",
+    "contributors": [],
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/###"
+    },
+    "dependencies": {
+    },
+    "devDependencies": {
+        "browser-sync": "^2.27.7",
+        "pug": "*",
+        "pug-cli": "*"
+    }
+}
