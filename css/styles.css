@@ -1,10 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap');
 
-body {
-    margin: 0;
+html {
+	scroll-behavior: smooth;
+}
+@media screen and (prefers-reduced-motion: reduce) {
+	html {
+		scroll-behavior: auto;
+	}
 }
 
-div {
+body {
+    margin: 0;
     font-family: "Fira Sans", sans-serif;
 }
 
@@ -14,13 +20,13 @@ div {
 
 .name-and-logo {
     position: absolute;
+    background: black;
     color: #ff7f2a;
     font-size: 4.8vw;
     right: 0;
     top: 0;
     text-align: right;
-    background: black;
-    padding: 4vw 4vw 7vw 7vw;
+    padding: 4vw 4vw 5vw 7vw;
     z-index: -1;
 }
 
@@ -30,6 +36,75 @@ div {
     z-index: 1;
 }
 
+nav {
+    position: absolute;
+    left: 0.4em;
+    top: 0.4em;
+}
+
+nav button {
+    background: black;
+    border: black solid 0.2em;
+    border-radius: 0.2em;
+    color: #ff7f2a;
+    font-size: 1.5em;
+}
+
+nav ol {
+    visibility: hidden;
+    display: block;
+    padding: 0.2em 0.2em 0 0;
+    margin: 0;
+}
+
+nav button:hover {
+    background: darkgray;
+    border-color: darkgray;
+    color: white;
+}
+
+nav button:hover + ol {
+    visibility: visible;
+}
+
+nav button:hover + ol li {
+    animation-duration: 0.5s;
+    animation-name: swing-out-menu
+}
+
+@keyframes swing-out-menu {
+    from {
+        margin-top: -1.5em;
+    }
+}
+
+nav ol:hover {
+    visibility: visible;
+}
+
+nav li {
+    margin: 0.2em 0;
+    display: block;
+    padding: 0.3em;
+}
+
+nav a, nav a:visited {
+    display: block;
+    color: #ff7f2a;
+    background: black;
+    border: black solid 0.7em;
+    border-radius: 0.2em;
+    text-decoration: none;
+    font-weight: bold;
+    width: 100%;
+}
+
+nav a:hover {
+    background: darkgray;
+    border-color: darkgray;
+    color: white;
+}
+
 .content {
     padding: 2vw;
 }
@@ -37,7 +112,7 @@ div {
 .content > h1 {
     font-size: min(5vw, 2.5rem);
     font-family: "Fira Sans", sans-serif;
-    margin-top: 2rem;
+    margin-top: 3rem;
 }
 
 .content > h1 > .w-word {
@@ -46,8 +121,6 @@ div {
 }
 
 .content > div {
-    padding-left: 2vw;
-    padding-right: 2vw;
     margin-bottom: 0.7em;
 }
 
@@ -109,4 +182,11 @@ img.big {
     display: block;
     width: 100%;
     margin: 0.5em 0;
+}
+
+.impressum {
+    margin-top: 5em;
+    text-align: right;
+    bottom: 0;
+    right: 0;
 }

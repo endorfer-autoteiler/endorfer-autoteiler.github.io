@@ -2,8 +2,6 @@ doctype html
 html(lang='en')
 
   head
-    //base(href="..")
-
     meta(charset='utf-8')
     meta(name='viewport', content='width=device-width, initial-scale=1, shrink-to-fit=no')
     meta(name='description', content='EnAT Homepage')
@@ -15,15 +13,32 @@ html(lang='en')
     link(href='css/styles.css', rel='stylesheet')
 
   body
-    img.banner(src="img/banner.png" alt="Banner")
-    .name-and-logo
-      div Bad Endorfer
-      div AutoTeiler e.V.
-      img(src="img/logo.svg", alt="EnAT Logo")
+    .header
+      img.banner(src="img/banner.png" alt="Banner")
+      .name-and-logo
+        div Bad Endorfer
+        div AutoTeiler e.V.
+        img(src="img/logo.svg", alt="EnAT Logo")
+
+    nav
+      button ☰
+      ol
+        li
+          a(href="#wer") Wer...?
+        li
+          a(href="#was") Was...?
+        li
+          a(href="#wie") Wie...?
+        li
+          a(href="#warum") Warum...?
+        li
+          a(href="https://www.elkato.de/buchung/enat") Buchung
+        li
+          a(href="mailto:info@endorfer-autoteiler.de") Kontakt
 
     .content
 
-      h1 #[.w-word Wer] sind wir?
+      h1#wer #[.w-word Wer] sind wir?
 
       div.
         Wir sind ein eingetragener Verein mit momentan 25 Mitgliedern und
@@ -48,7 +63,7 @@ html(lang='en')
         über eine Mail (###) oder einen Anruf (###) freuen.
 
 
-      h1 #[.w-word Was ]bietet EnAT?
+      h1#was #[.w-word Was ]bietet EnAT?
 
       div.
         Wenn unsere Mitglieder für eine Fahrt ein Auto brauchen, haben sie die Wahl
@@ -77,31 +92,32 @@ html(lang='en')
           div #[b 1,00]&nbsp;EUR/h (bzw. #[b 0.20]&nbsp;EUR/h)#[sup **]
 
       div
-        sup
-          | *) Weitstreckentarif. Gilt pro angefangene 1000 Kilometer ab Kilometer 301.
-          | D.h. Kilometer 301-1000 sowie 1301.2000 usw. sind vergünstigt.
+        sup.
+          *) Weitstreckentarif. Gilt pro angefangene 1000 Kilometer ab Kilometer 301.
+          D.h. Kilometer 301-1000 sowie 1301.2000 usw. sind vergünstigt.
       div
         sup **) Nachttarif. Gilt von 18:00 bis 8:00
 
       div
         iframe.cars-map(allowfullscreen src="//umap.openstreetmap.fr/de/map/parkplatze-der-enat-autos_681861?scaleControl=false&miniMap=false&scrollWheelZoom=false&zoomControl=true&allowEdit=false&moreControl=false&searchControl=null&tilelayersControl=null&embedControl=null&datalayersControl=false&onLoadPanel=undefined&captionBar=false")
 
-      h1#how-to-use #[.w-word Wie] nutze ich EnAT?
+      h1#wie #[.w-word Wie] nutze ich EnAT?
 
       div
-        | Um unsere Autos nutzen zu können musst du Mitglied in unserem Verein
-        | sein. Hierbei entstehen folgende Kosten:
+        p.
+          Um unsere Autos nutzen zu können musst du Mitglied in unserem Verein
+          sein. Hierbei entstehen folgende Kosten:
         ul
-          li Einmalige Aufnahmegebühr: #[b 50 EUR] #[br] (### nur für Fahrberechtigte?!?)
-          li Einmalige Einlage: #[b 600 EUR] #[br] (wird bei Ausscheiden unverzinslich zurückbezahlt)
           li Mitgliedsbeitrag: #[b 30 EUR/Jahr]
+          li Einmalige Einlage: #[b 600 EUR] #[br] (wird bei Ausscheiden zurückbezahlt)
+          li Einmalige Aufnahmegebühr: #[b 50 EUR]
 
       div.
-        Wenn du als Mitglied ein Auto ausleihen möchtest, musst du zuerst per
-        PC oder Handy das gewünscht Auto für den gewünschten Zeitraum reservieren.
+        Wenn du als Mitglied ein Auto ausleihen möchtest, reservierst du zuerst per
+        PC oder Handy das gewünschte Auto für den gewünschten Zeitraum.
         Das von uns eingesetzte
         #[a(href="https://www.elkato.de/buchung/enat") Buchungssystem]
-        bietet eine unkomplizierte Webseite
+        bietet ein unkompliziertes Webportal
         über die das Auto schnell gebucht werden kann. Ausserdem zeigt es
         übersichtlich an wann welches Auto verfügbar ist:
         #[img.big(src="img/buchungssystem.png" alt="Buchungssystem" )]
@@ -123,13 +139,14 @@ html(lang='en')
         die gebuchte Zeit
         (siehe #[a(href="#cars-description") Zeittarif]) aufaddiert und abgerechnet.
 
-      h1 #[.w-word Warum] sollte ich EnAT nutzen?
+      h1#warum #[.w-word Warum] sollte ich EnAT nutzen?
 
       div
-        | Der Besitz eines eigenen Autos (oder zwei eigener Autos) ist insbesondere
-        | auf dem Land so selbstverständlich, daß sich kaum jemand über
-        | Alternativen Gedanken macht. Dabei kann eine Alternative wie
-        | EnAT je nach Lebenssituation deutliche Vorteile mit sich bringen:
+        p.
+          Der Besitz eines eigenen Autos (oder zwei eigener Autos) ist insbesondere
+          auf dem Land so selbstverständlich, daß sich kaum jemand über
+          Alternativen Gedanken macht. Dabei kann eine Alternative wie
+          EnAT je nach Lebenssituation deutliche Vorteile mit sich bringen:
         ul
           li.
             #[div Kosteneinsparung]
@@ -169,5 +186,9 @@ html(lang='en')
             und und und... #[br]
             Das alles fällt mit CarSharing weg, da unsere jeweiligen Autoverantwortlichen
             all diese Aufgaben (ehrenamtlich) erledigen.
-        | Wir hoffen mit dieser Liste konnten wir dein Interesse wecken oder dich
-        | zumindest zum Nachdenken bringen.
+        p.
+          Wir hoffen mit dieser Liste konnten wir dein Interesse wecken oder dich
+          zumindest zum Nachdenken bringen.
+
+      .impressum
+        a(href="https://www.endorfer-autoteiler.de/Impressum/") Impressum
