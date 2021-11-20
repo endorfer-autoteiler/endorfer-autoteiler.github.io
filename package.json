@@ -3,11 +3,7 @@
     "name": "enat-homepage",
     "version": "0.0.1",
     "scripts": {
-        "build": "npm run clean && npm run build:pug",
-        "build:pug": "node scripts/build-pug.js",
-        "clean": "node scripts/clean.js",
-        "start": "npm run build && node scripts/start.js",
-        "start:debug": "npm run build && node scripts/start-debug.js"
+        "build": "bash -c \"rm -f *.html\" && pug ."
     },
     "description": "Homepage for Bad Endorfer AutoTeiler e.V.",
     "keywords": [
@@ -20,7 +16,7 @@
         "email": "tlma@posteo.de"
     },
     "license": "MIT",
-    "author": "Robert H�lzl",
+    "author": "Robert Hölzl",
     "contributors": [],
     "repository": {
         "type": "git",

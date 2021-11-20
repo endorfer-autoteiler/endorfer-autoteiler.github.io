@@ -1,0 +1,33 @@
+# Render the PUG files and publish the resulting website to gh-pages
+
+name: publish
+
+on:
+  push:
+    branches: [ master ]
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      -
+        name: Checkout
+        uses: actions/checkout@v2
+      -
+        name: Render HTML Pages
+        run: |
+          npm install
+          npm run-script build
+          ls -l
+      -
+        name: Deploy to GitHub Pages
+        run: |
+          ls -l
+          git config user.email "noreply@github.com"
+          git config user.name "GitHub Actions"
+          git symbolic-ref HEAD refs/heads/gh-pages
+          git add -f ':(glob)*.html'
+          git rm -f ./*.pug
+          git rm -f ./.github/workflows/publish.yml
+          git commit -a -m "Rendered Content of Commit ${GITHUB_SHA}"
+          git push -f --set-upstream  origin gh-pages
