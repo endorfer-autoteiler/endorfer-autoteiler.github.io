@@ -45,7 +45,7 @@ nav {
 nav button {
     background: black;
     border: black solid 0.2em;
-    border-radius: 0.2em;
+    border-radius: 0.3em;
     color: #ff7f2a;
     font-size: 1.5em;
 }
@@ -58,9 +58,9 @@ nav ol {
 }
 
 nav button:hover {
-    background: darkgray;
-    border-color: darkgray;
-    color: white;
+    background: #505050;
+    border-color: #505050;
+    color: #ff7f2a;
 }
 
 nav button:hover + ol {
@@ -93,16 +93,16 @@ nav a, nav a:visited {
     color: #ff7f2a;
     background: black;
     border: black solid 0.7em;
-    border-radius: 0.2em;
+    border-radius: 0.5em;
     text-decoration: none;
     font-weight: bold;
     width: 100%;
 }
 
 nav a:hover {
-    background: darkgray;
-    border-color: darkgray;
-    color: white;
+    background: #505050;
+    border-color: #505050;
+    color: #ff7f2a;
 }
 
 .content {
