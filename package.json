@@ -3,6 +3,7 @@
     "name": "enat-homepage",
     "version": "0.0.1",
     "scripts": {
+        "start": "start /B pug -w . & browser-sync start -w -s --files *.html img/ css/ start",
         "build": "bash -c \"rm -f *.html\" && pug ."
     },
     "description": "Homepage for Bad Endorfer AutoTeiler e.V.",
