@@ -1,0 +1,30 @@
+extends layout
+block content
+
+  h1#contact Kontakt
+
+  div.
+    Um uns zu kontaktieren kannst du entweder eine Mail an
+    #[a(href="mailto:info@endorfer-autoteiler.de") info@endorfer-autoteiler.de]
+    senden oder uns unter 08053/5308186 anrufen.
+
+  div
+    | Alternativ kannst du auch folgendes Kontaktformular nutzen:
+    form(action="https://api.staticforms.xyz/submit" method="post")
+      label
+        | Dein Name
+        input(name="name" type="text")
+      label
+        | Deine eMail Addresse
+        input(name="email" type="email")
+      label
+        | Um was gehts?
+        textarea(name="message")
+
+      input(name="accessKey" type="hidden" value="d78a5f06-9f53-4038-8680-f73da6a685aa")
+      input(name="honeypot" type="text" style="display: none;")
+      input(name="subject" type="hidden" value="Anfrage zu EnAT")
+      input(name="replyTo" type="hidden" value="@")
+      input(name="redirectTo" type="hidden" value="http://endorfer-autoteiler.github.io/mail-sent.html#message")
+
+      button(type="submit") Nachricht senden

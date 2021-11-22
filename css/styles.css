@@ -42,7 +42,7 @@ nav {
     top: 0.4em;
 }
 
-nav button {
+button {
     background: black;
     border: black solid 0.2em;
     border-radius: 0.3em;
@@ -57,7 +57,7 @@ nav ol {
     margin: 0;
 }
 
-nav button:hover {
+button:hover {
     background: #505050;
     border-color: #505050;
     color: #ff7f2a;
@@ -182,6 +182,34 @@ img.big {
     display: block;
     width: 100%;
     margin: 0.5em 0;
+}
+
+
+input, textarea, label {
+    display: block;
+    border: none;
+}
+
+label {
+    margin-top: 2em;
+}
+
+input, textarea {
+    padding: 0.5em;
+    border-bottom: #ff7f2a solid 0.2em;
+    margin-bottom: 2em;
+    margin-top: 0.5em;
+    width: 95%;
+    background-color: #F0F0F0;
+}
+
+input:focus, textarea:focus {
+    background-color: lightgray;
+    outline:none;
+}
+
+textarea {
+    height: 10em;
 }
 
 .impressum {
