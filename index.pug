@@ -1,194 +1,154 @@
-doctype html
-html(lang='en')
+extends layout
+block content
 
-  head
-    meta(charset='utf-8')
-    meta(name='viewport', content='width=device-width, initial-scale=1, shrink-to-fit=no')
-    meta(name='description', content='EnAT Homepage')
-    meta(name='author', content='Robert Hölzl')
+  h1#wer #[.w-word Wer] sind wir?
 
-    title Bad Endorfer AutoTeiler e.V.
-    link(rel='icon', type='image/x-icon', href='img/favicon.ico')
+  div.
+    Wir sind ein eingetragener Verein mit momentan 25 Mitgliedern und
+    2 eigenen Autos. Diese beiden Autos teilen wir uns per
+    #[a(href="https://carsharing.de/alles-ueber-carsharing/ist-carsharing/ist-carsharing") Stationsbasiertem CarSharing].
 
-    link(href='css/styles.css', rel='stylesheet')
+  div.
+    Der Verein wurde 2015 im beschaulichen
+    #[a(href="https://www.openstreetmap.org/relation/2186912#map=9/47.8338/12.2226") Bad Endorf]
+    gegründet und wächst
+    seitdem stetig. Die meisten Mitglieder nutzen unsere Autos als
+    Zweit- oder Drittautoersatz. Aufgrund der Bahnanbindung in Bad Endorf
+    haben wir aber auch Mitglieder, die dank EnAT zusammen mit Fahrrad
+    und Bahn komplett auf ein eigenes Auto verzichten können.
 
-  body
-    .header
-      img.banner(src="img/banner.png" alt="Banner")
-      .name-and-logo
-        div Bad Endorfer
-        div AutoTeiler e.V.
-        img(src="img/logo.svg", alt="EnAT Logo")
-
-    nav
-      button ☰
-      ol
-        li
-          a(href="#wer") Wer sind wir?
-        li
-          a(href="#was") Was bietet EnAT?
-        li
-          a(href="#wie") Wie nutze ich EnAT?
-        li
-          a(href="#warum") Warum sollte ich EnAT nutzen?
-        li
-          a(href="https://www.elkato.de/buchung/enat") Buchung
-        li
-          a(href="mailto:info@endorfer-autoteiler.de") Kontakt
-
-    .content
-
-      h1#wer #[.w-word Wer] sind wir?
-
-      div.
-        Wir sind ein eingetragener Verein mit momentan 25 Mitgliedern und
-        2 eigenen Autos. Diese beiden Autos teilen wir uns per
-        #[a(href="https://carsharing.de/alles-ueber-carsharing/ist-carsharing/ist-carsharing") Stationsbasiertem CarSharing].
-
-      div.
-        Der Verein wurde 2015 im beschaulichen
-        #[a(href="https://www.openstreetmap.org/relation/2186912#map=9/47.8338/12.2226") Bad Endorf]
-        gegründet und wächst
-        seitdem stetig. Die meisten Mitglieder nutzen unsere Autos als
-        Zweit- oder Drittautoersatz. Aufgrund der Bahnanbindung in Bad Endorf
-        haben wir aber auch Mitglieder, die dank EnAT zusammen mit Fahrrad
-        und Bahn komplett auf ein eigenes Auto verzichten können.
-
-      div.
-        Als Verein von Gleichgesinnten freuen wir uns natürlich jederzeit über
-        Neumitglieder.
-        Insbesondere auch, da jedes weitere Mitglied die Auslastung der Autos
-        weiter verbessert und damit die Kosten für den Einzelnen auf Dauer
-        potenziell reduziert. Wenn du also Interesse hast würden wir uns sehr
-        über eine Mail (###) oder einen Anruf (###) freuen.
+  div.
+    Als Verein von Gleichgesinnten freuen wir uns natürlich jederzeit über
+    Neumitglieder.
+    Insbesondere auch, da jedes weitere Mitglied die Auslastung der Autos
+    weiter verbessert und damit die Kosten für den Einzelnen auf Dauer
+    potenziell reduziert. Wenn du also Interesse hast würden wir uns sehr
+    über eine Mail (###) oder einen Anruf (###) freuen.
 
 
-      h1#was #[.w-word Was ]bietet EnAT?
+  h1#was #[.w-word Was ]bietet EnAT?
 
-      div.
-        Wenn unsere Mitglieder für eine Fahrt ein Auto brauchen, haben sie die Wahl
-        zwischen einem günstigen Ford Ka und einem geräumigen Citroën Berlingo.
-        Desweiteren haben wir noch eine Kooperation
-        mit der #[a(href="https://www.carsharing-amerang.de/uns.html") Ameranger Autogemeinschaft (AmAG)]
-        über die per Quernutzung nocheinmal zwei weitere Autos ausgeliehen werden
-        können.
+  div.
+    Wenn unsere Mitglieder für eine Fahrt ein Auto brauchen, haben sie die Wahl
+    zwischen einem günstigen Ford Ka und einem geräumigen Citroën Berlingo.
+    Desweiteren haben wir noch eine Kooperation
+    mit der #[a(href="https://www.carsharing-amerang.de/uns.html") Ameranger Autogemeinschaft (AmAG)]
+    über die per Quernutzung nocheinmal zwei weitere Autos ausgeliehen werden
+    können.
 
-      #cars-description
-        div
-          img(src="img/berlingo.jpg" alt="Citroën Berlingo")
-          .car-name Citroën Berlingo
-          div #[b 5] Sitze
-          div Anhängekupplung
-          div #[b 1] Kindersitz (bis&nbsp;12kg)
-          div #[b 0,40]&nbsp;EUR/km (bzw. #[b 0,30]&nbsp;EUR/km)#[sup *]
-          div #[b 1,00]&nbsp;EUR/h (bzw. #[b 0.20]&nbsp;EUR/h)#[sup **]
+  #cars-description
+    div
+      img(src="img/berlingo.jpg" alt="Citroën Berlingo")
+      .car-name Citroën Berlingo
+      div #[b 5] Sitze
+      div Anhängekupplung
+      div #[b 1] Kindersitz (bis&nbsp;12kg)
+      div #[b 0,40]&nbsp;EUR/km (bzw. #[b 0,30]&nbsp;EUR/km)#[sup *]
+      div #[b 1,00]&nbsp;EUR/h (bzw. #[b 0.20]&nbsp;EUR/h)#[sup **]
 
-        div
-          img(src="img/ford_ka.jpg" alt="Ford Ka")
-          .car-name Ford Ka
-          div #[b 4] Sitze
-          div #[b 1] Kindersitz (bis&nbsp;12kg)
-          div #[b 0,35]&nbsp;EUR/km (bzw. #[b 0,25]&nbsp;EUR/km)#[sup *]
-          div #[b 1,00]&nbsp;EUR/h (bzw. #[b 0.20]&nbsp;EUR/h)#[sup **]
+    div
+      img(src="img/ford_ka.jpg" alt="Ford Ka")
+      .car-name Ford Ka
+      div #[b 4] Sitze
+      div #[b 1] Kindersitz (bis&nbsp;12kg)
+      div #[b 0,35]&nbsp;EUR/km (bzw. #[b 0,25]&nbsp;EUR/km)#[sup *]
+      div #[b 1,00]&nbsp;EUR/h (bzw. #[b 0.20]&nbsp;EUR/h)#[sup **]
 
-      div
-        sup.
-          *) Weitstreckentarif. Gilt pro angefangene 1000 Kilometer ab Kilometer 301.
-          D.h. Kilometer 301-1000 sowie 1301-2000 usw. sind vergünstigt.
-      div
-        sup **) Nachttarif. Gilt von 18:00 bis 8:00
+  div
+    sup.
+      *) Weitstreckentarif. Gilt pro angefangene 1000 Kilometer ab Kilometer 301.
+      D.h. Kilometer 301-1000 sowie 1301-2000 usw. sind vergünstigt.
+  div
+    sup **) Nachttarif. Gilt von 18:00 bis 8:00
 
-      div
-        iframe.cars-map(allowfullscreen src="//umap.openstreetmap.fr/de/map/parkplatze-der-enat-autos_681861?scaleControl=false&miniMap=false&scrollWheelZoom=false&zoomControl=true&allowEdit=false&moreControl=false&searchControl=null&tilelayersControl=null&embedControl=null&datalayersControl=false&onLoadPanel=undefined&captionBar=false")
+  div
+    iframe.cars-map(allowfullscreen src="//umap.openstreetmap.fr/de/map/parkplatze-der-enat-autos_681861?scaleControl=false&miniMap=false&scrollWheelZoom=false&zoomControl=true&allowEdit=false&moreControl=false&searchControl=null&tilelayersControl=null&embedControl=null&datalayersControl=false&onLoadPanel=undefined&captionBar=false")
 
-      h1#wie #[.w-word Wie] nutze ich EnAT?
+  h1#wie #[.w-word Wie] nutze ich EnAT?
 
-      div
-        p.
-          Um unsere Autos nutzen zu können musst du Mitglied in unserem Verein
-          sein. Hierbei entstehen folgende Kosten:
-        ul
-          li Mitgliedsbeitrag: #[b 30 EUR/Jahr]
-          li Einmalige Einlage: #[b 600 EUR] #[br] (wird bei Ausscheiden zurückbezahlt)
-          li Einmalige Aufnahmegebühr: #[b 50 EUR]
+  div
+    p.
+      Um unsere Autos nutzen zu können musst du Mitglied in unserem Verein
+      sein. Hierbei entstehen folgende Kosten:
+    ul
+      li Mitgliedsbeitrag: #[b 30 EUR/Jahr]
+      li Einmalige Einlage: #[b 600 EUR] #[br] (wird bei Ausscheiden zurückbezahlt)
+      li Einmalige Aufnahmegebühr: #[b 50 EUR]
 
-      div.
-        Wenn du als Mitglied ein Auto ausleihen möchtest, reservierst du zuerst per
-        PC oder Handy das gewünschte Auto für den gewünschten Zeitraum.
-        Das von uns eingesetzte
-        #[a(href="https://www.elkato.de/buchung/enat") Buchungssystem]
-        bietet ein unkompliziertes Webportal
-        über die das Auto schnell gebucht werden kann. Ausserdem zeigt es
-        übersichtlich an wann welches Auto verfügbar ist:
-        #[img.big(src="img/buchungssystem.png" alt="Buchungssystem" )]
+  div.
+    Wenn du als Mitglied ein Auto ausleihen möchtest, reservierst du zuerst per
+    PC oder Handy das gewünschte Auto für den gewünschten Zeitraum.
+    Das von uns eingesetzte
+    #[a(href="https://www.elkato.de/buchung/enat") Buchungssystem]
+    bietet ein unkompliziertes Webportal
+    über die das Auto schnell gebucht werden kann. Ausserdem zeigt es
+    übersichtlich an wann welches Auto verfügbar ist:
+    #[img.big(src="img/buchungssystem.png" alt="Buchungssystem" )]
 
-      div.
-        Bevor du die eigentliche Fahrt antritts holst du dir den Autoschlüssel
-        aus dem Tresor der sich in der Umgebung des jeweiliges Autos befindet.
-        Im Auto befindet sich dann ein Fahrtenbuch in das die Fahrt mit Kilometerstand
-        und Zeit eingetragen wird. Wenn das Fahrzeug während der Fahrt betankt
-        werden muss trägst du dies ebenfalls ins Fahrtenbuch ein und legst die Rechnung
-        dazu. Der Tankbetrag wird dann bei der nächsten Abrechnung mitverrechnet.
+  div.
+    Bevor du die eigentliche Fahrt antritts holst du dir den Autoschlüssel
+    aus dem Tresor der sich in der Umgebung des jeweiliges Autos befindet.
+    Im Auto befindet sich dann ein Fahrtenbuch in das die Fahrt mit Kilometerstand
+    und Zeit eingetragen wird. Wenn das Fahrzeug während der Fahrt betankt
+    werden muss trägst du dies ebenfalls ins Fahrtenbuch ein und legst die Rechnung
+    dazu. Der Tankbetrag wird dann bei der nächsten Abrechnung mitverrechnet.
 
-      div.
-        Einmal pro Quartal erhältst du dann eine Abrechnung über alle Fahrten.
-        Der entsprechende Betrag (Abzüglich deiner Tankrechnungen) wird
-        automatisch von deinem Konto eingezogen. Dabei werden pro Fahrt
-        die Kosten für die gefahrenen Kilometer (siehe
-        #[a(href="#cars-description") Kilometertarif]) sowie die Kosten für
-        die gebuchte Zeit
-        (siehe #[a(href="#cars-description") Zeittarif]) aufaddiert und abgerechnet.
+  div.
+    Einmal pro Quartal erhältst du dann eine Abrechnung über alle Fahrten.
+    Der entsprechende Betrag (Abzüglich deiner Tankrechnungen) wird
+    automatisch von deinem Konto eingezogen. Dabei werden pro Fahrt
+    die Kosten für die gefahrenen Kilometer (siehe
+    #[a(href="#cars-description") Kilometertarif]) sowie die Kosten für
+    die gebuchte Zeit
+    (siehe #[a(href="#cars-description") Zeittarif]) aufaddiert und abgerechnet.
 
-      h1#warum #[.w-word Warum] sollte ich EnAT nutzen?
+  h1#warum #[.w-word Warum] sollte ich EnAT nutzen?
 
-      div
-        p.
-          Der Besitz eines eigenen Autos (oder zwei eigener Autos) ist insbesondere
-          auf dem Land so selbstverständlich, daß sich kaum jemand über
-          Alternativen Gedanken macht. Dabei kann eine Alternative wie
-          EnAT je nach Lebenssituation deutliche Vorteile mit sich bringen:
-        ul
-          li.
-            #[div Kosteneinsparung]
-            Je nachdem wieviel Kilometer pro Jahr man ein Auto benötigt kann
-            CarSharing deutlich günstiger sein als ein eigenes Auto. Der
-            Bundesverband CarSharing geht davon aus, daß bei einer Jahrkilometerleistung
-            von #[a(href="https://carsharing.de/alles-ueber-carsharing/ist-carsharing/ist-carsharing-richtige-fuer-mich") weniger als 10000 km]
-            CarSharing bereits günstiger ist.
-          li.
-            #[div Umweltschutz]
-            Angesichts des bevorstehenden Klimawandels ist eine Änderung unseres
-            Resourcenverbrauchs unabdingbar. Da privat genutzte Autos i.d.R.
-            sehr geringe Jahreskilometerleistungen haben ist der Resourcenaufwand
-            der durch die Produktion entsteht auf den Kilometer umgerechnet sehr hoch.
-            Da CarSharing die Auslastung der Autos deutlich erhöht wird der
-            (Produktions-)Resourcenverbrauch pro Kilometer entsprechend reduziert.
-          li.
-            #[div Intensiveres Nutzen von Alternativen]
-            Da das Auto nicht direkt vor der Haustür steht ist es oft schneller
-            Besorgungen mit dem Fahrrad oder zu Fuss zu erledigen.
-            Auch die Bahn als Verkehrsmittel
-            gewinnt an Attraktivität da die Kosten sehr direkt vergleichbar sind
-            (im Gegensatz zu einem eigenen Auto, bei dem der Hauptkostenblock
-            nicht pro gefahrene Kilometer sondern als Fixkosten anfällt).
-            Das kommt noch zusätzlich zu den bereits genannten Punkten als
-            Kosteneinsparung und Klimaschutzmassnahme hinzu.
-          li.
-            #[div Kalkulierbare Kosten]
-            Ein Getriebeschaden oder neue Bremsen
-            reißen kein Loch mehr in den Geldbeutel. Du weist bereits vor der
-            Fahrt exakt wieviel das ganze Kosten wird.
-          li.
-            #[div Weniger Ärger]
-            Wenn das eigene Auto einen Schaden hat, muss man es nicht nur zur
-            Werkstatt bringen, man muss auch irgendwie zurückkommen, entscheiden
-            ob sich die Reparatur rentiert, sich ggf. um ein Ersatzfahrzeug kümmern
-            und und und... #[br]
-            Das alles fällt mit CarSharing weg, da unsere jeweiligen Autoverantwortlichen
-            all diese Aufgaben (ehrenamtlich) erledigen.
-        p.
-          Wir hoffen mit dieser Liste konnten wir dein Interesse wecken oder dich
-          zumindest zum Nachdenken bringen.
-
-      .impressum
-        a(href="https://www.endorfer-autoteiler.de/Impressum/") Impressum
+  div
+    p.
+      Der Besitz eines eigenen Autos (oder zwei eigener Autos) ist insbesondere
+      auf dem Land so selbstverständlich, daß sich kaum jemand über
+      Alternativen Gedanken macht. Dabei kann eine Alternative wie
+      EnAT je nach Lebenssituation deutliche Vorteile mit sich bringen:
+    ul
+      li.
+        #[div Kosteneinsparung]
+        Je nachdem wieviel Kilometer pro Jahr man ein Auto benötigt kann
+        CarSharing deutlich günstiger sein als ein eigenes Auto. Der
+        Bundesverband CarSharing geht davon aus, daß bei einer Jahrkilometerleistung
+        von #[a(href="https://carsharing.de/alles-ueber-carsharing/ist-carsharing/ist-carsharing-richtige-fuer-mich") weniger als 10000 km]
+        CarSharing bereits günstiger ist.
+      li.
+        #[div Umweltschutz]
+        Angesichts des bevorstehenden Klimawandels ist eine Änderung unseres
+        Resourcenverbrauchs unabdingbar. Da privat genutzte Autos i.d.R.
+        sehr geringe Jahreskilometerleistungen haben ist der Resourcenaufwand
+        der durch die Produktion entsteht auf den Kilometer umgerechnet sehr hoch.
+        Da CarSharing die Auslastung der Autos deutlich erhöht wird der
+        (Produktions-)Resourcenverbrauch pro Kilometer entsprechend reduziert.
+      li.
+        #[div Intensiveres Nutzen von Alternativen]
+        Da das Auto nicht direkt vor der Haustür steht ist es oft schneller
+        Besorgungen mit dem Fahrrad oder zu Fuss zu erledigen.
+        Auch die Bahn als Verkehrsmittel
+        gewinnt an Attraktivität da die Kosten sehr direkt vergleichbar sind
+        (im Gegensatz zu einem eigenen Auto, bei dem der Hauptkostenblock
+        nicht pro gefahrene Kilometer sondern als Fixkosten anfällt).
+        Das kommt noch zusätzlich zu den bereits genannten Punkten als
+        Kosteneinsparung und Klimaschutzmassnahme hinzu.
+      li.
+        #[div Kalkulierbare Kosten]
+        Ein Getriebeschaden oder neue Bremsen
+        reißen kein Loch mehr in den Geldbeutel. Du weist bereits vor der
+        Fahrt exakt wieviel das ganze Kosten wird.
+      li.
+        #[div Weniger Ärger]
+        Wenn das eigene Auto einen Schaden hat, muss man es nicht nur zur
+        Werkstatt bringen, man muss auch irgendwie zurückkommen, entscheiden
+        ob sich die Reparatur rentiert, sich ggf. um ein Ersatzfahrzeug kümmern
+        und und und... #[br]
+        Das alles fällt mit CarSharing weg, da unsere jeweiligen Autoverantwortlichen
+        all diese Aufgaben (ehrenamtlich) erledigen.
+    p.
+      Wir hoffen mit dieser Liste konnten wir dein Interesse wecken oder dich
+      zumindest zum Nachdenken bringen.

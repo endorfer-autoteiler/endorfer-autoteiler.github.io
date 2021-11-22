@@ -1,0 +1,42 @@
+doctype html
+html(lang='en')
+
+  head
+    meta(charset='utf-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1, shrink-to-fit=no')
+    meta(name='description', content='EnAT Homepage')
+    meta(name='author', content='Robert Hölzl')
+
+    title Bad Endorfer AutoTeiler e.V.
+    link(rel='icon', type='image/x-icon', href='img/favicon.ico')
+
+    link(href='css/styles.css', rel='stylesheet')
+
+  body
+    .header
+      img.banner(src="img/banner.png" alt="Banner")
+      .name-and-logo
+        div Bad Endorfer
+        div AutoTeiler e.V.
+        img(src="img/logo.svg", alt="EnAT Logo")
+
+    nav
+      button ☰
+      ol
+        li
+          a(href="/#wer") Wer sind wir?
+        li
+          a(href="/#was") Was bietet EnAT?
+        li
+          a(href="/#wie") Wie nutze ich EnAT?
+        li
+          a(href="/#warum") Warum sollte ich EnAT nutzen?
+        li
+          a(href="https://www.elkato.de/buchung/enat") Buchung
+        li
+          a(href="mailto:info@endorfer-autoteiler.de") Kontakt
+
+    .content
+      block content
+      .impressum
+        a(href="https://www.endorfer-autoteiler.de/Impressum/") Impressum
