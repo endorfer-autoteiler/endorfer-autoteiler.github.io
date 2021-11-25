@@ -1,4 +1,11 @@
 extends layout
+
+mixin pdf_download(name)
+  li
+    a(href="documents/" + name + "-EnAT.pdf" download)
+      img(src="img/file_pdf.png" alt="PDF ICON" height="25")
+      | #{name}
+
 block content
 
   h1#forms Anmeldeformulare
@@ -8,15 +15,11 @@ block content
     und unterschreiben müssen zusammengetragen.
 
   ul
-    li
-      a(href="documents/Beitrittserklärung-EnAT.pdf" download) Beitrittserklärung
-    li
-      a(href="documents/Nutzungsordnung-EnAT.pdf" download) Nutzungsordnung
+    +pdf_download("Beitrittserklärung")
+    +pdf_download("Nutzungsordnung")
 
   h1 Andere Dokumente
 
   ul
-    li
-      a(href="documents/Satzung-EnAT.pdf" download) Satzung
-    li
-      a(href="documents/Gebührenordnung-EnAT.pdf" download) Gebührenordnung
+    +pdf_download("Satzung")
+    +pdf_download("Gebührenordnung")
