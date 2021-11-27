@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans&family=Raleway:wght@300&display=swap');
 
 html {
 	scroll-behavior: smooth;
@@ -11,7 +11,7 @@ html {
 
 body {
     margin: 0;
-    font-family: "Fira Sans", sans-serif;
+    font-family: "Raleway", "Fira Sans", sans-serif;
 }
 
 .banner {
