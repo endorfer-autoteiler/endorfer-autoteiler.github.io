@@ -50,6 +50,12 @@ button {
     font-size: 1.5em;
 }
 
+button:hover {
+    background: #505050;
+    border-color: #505050;
+    color: #ff7f2a;
+}
+
 nav ol {
     display: block;
     padding: 0.2em 0.2em 0 0;
@@ -70,12 +76,6 @@ nav ol {
 
     nav ol {
         visibility: hidden;
-    }
-
-    button:hover {
-        background: #505050;
-        border-color: #505050;
-        color: #ff7f2a;
     }
 
     nav button:hover + ol {
