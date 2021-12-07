@@ -8,16 +8,17 @@ mixin pdf_download(name)
 
 block content
 
-  h1#forms Anmeldeformulare
+  h1#forms Mitglied werden
 
   div.
-    Hier sind alle Formulare die Neumitglieder ausdrucken
-    und unterschreiben müssen zusammengetragen.
+    Einfach die folgenden 4 Formulare ausdrucken und unterschrieben an uns
+    #[a(href="/contact.html#contact") zurückschicken]. Vielen Dank!
 
   ul
     +pdf_download("Beitrittserklärung")
     +pdf_download("Nutzungsordnung")
     +pdf_download("SEPA-Formular")
+    li Kopie des Führerscheins
 
   h1 Andere Dokumente
 
