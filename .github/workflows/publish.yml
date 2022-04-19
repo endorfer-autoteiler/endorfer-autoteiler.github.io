@@ -23,9 +23,11 @@ jobs:
         name: Deploy to GitHub Pages
         run: |
           ls -l
+          echo www.endorfer-autoteiler.de > CNAME
           git config user.email "noreply@github.com"
           git config user.name "GitHub Actions"
           git symbolic-ref HEAD refs/heads/gh-pages
+          git add -f ./CNAME
           git add -f ':(glob)*.html'
           git rm -f ./*.pug
           git rm -f ./.github/workflows/publish.yml
