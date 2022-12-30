@@ -4,8 +4,8 @@ block content
   h1#wer #[.w-word Wer] sind wir?
 
   div.
-    Wir sind ein eingetragener Verein mit momentan 25 Mitgliedern und
-    2 eigenen Autos. Diese beiden Autos teilen wir uns per
+    Wir sind ein eingetragener Verein mit momentan 30 Mitgliedern und
+    3 eigenen Autos. Diese Autos teilen wir uns per
     #[a(href="https://carsharing.de/alles-ueber-carsharing/ist-carsharing/ist-carsharing") stationsbasiertem CarSharing].
 
   div.
@@ -79,7 +79,8 @@ block content
 
   div.
     Wenn unsere Mitglieder für eine Fahrt ein Auto brauchen, haben sie die Wahl
-    zwischen einem günstigen Ford Ka und einem geräumigen Citroën Berlingo.
+    zwischen einem günstigen Ford Ka, einem geräumigen Citroën Berlingo und einem
+    elektrischen Renault Kangoo Z.E. Maxi.
     Desweiteren haben wir noch eine Kooperation
     mit der #[a(href="https://www.carsharing-amerang.de/uns.html") Ameranger Autogemeinschaft (AmAG)]
     über die noch einmal zwei weitere Autos ausgeliehen werden können.
@@ -87,6 +88,14 @@ block content
     der Zeitkosten.
 
   #cars-description
+    div
+      img(src="img/ford_ka.jpg" alt="Ford Ka")
+      .car-name Ford Ka
+      div #[b 4] Sitze
+      div #[b 1] Kindersitz (bis&nbsp;12kg)
+      div #[b 0,30]&nbsp;EUR/km (bzw. #[b 0,20]&nbsp;EUR/km#[sup *])
+      div #[b 1,00]&nbsp;EUR/h (bzw. #[b 0.20]&nbsp;EUR/h#[sup **])
+
     div
       img(src="img/berlingo.jpg" alt="Citroën Berlingo")
       .car-name Citroën Berlingo
@@ -97,11 +106,11 @@ block content
       div #[b 1,00]&nbsp;EUR/h (bzw. #[b 0.20]&nbsp;EUR/h#[sup **])
 
     div
-      img(src="img/ford_ka.jpg" alt="Ford Ka")
-      .car-name Ford Ka
-      div #[b 4] Sitze
-      div #[b 1] Kindersitz (bis&nbsp;12kg)
-      div #[b 0,30]&nbsp;EUR/km (bzw. #[b 0,20]&nbsp;EUR/km#[sup *])
+      img(src="img/kangoo.jpg" alt="Renault Kangoo Z.E. Maxi")
+      .car-name Renault Kangoo (elektrisch)
+      div #[b 5] Sitze
+      div #[b 150 - 200]&nbsp;km Reichweite (Aussentemperaturabhängig)
+      div #[b 0,35]&nbsp;EUR/km (bzw. #[b 0,25]&nbsp;EUR/km#[sup *])
       div #[b 1,00]&nbsp;EUR/h (bzw. #[b 0.20]&nbsp;EUR/h#[sup **])
 
   div
@@ -111,7 +120,7 @@ block content
     sup ** Nachttarif. Gilt von 18:00 bis 8:00 Uhr
 
   div
-    iframe.cars-map(allowfullscreen src="//umap.openstreetmap.fr/de/map/parkplatze-der-enat-autos_681861?scaleControl=false&miniMap=false&scrollWheelZoom=false&zoomControl=true&allowEdit=false&moreControl=false&searchControl=null&tilelayersControl=null&embedControl=null&datalayersControl=false&onLoadPanel=undefined&captionBar=false")
+    iframe.cars-map(allowfullscreen src="https://umap.openstreetmap.fr/de/map/parkplatze-der-enat-autos_851388#15/47.9081/12.3006")
 
   h1#wie #[.w-word Wie] funktioniert's?
 
@@ -144,6 +153,8 @@ block content
     und Zeit eingetragen wird. Wenn das Fahrzeug während der Fahrt betankt
     werden muss, trägst du dies ebenfalls ins Fahrtenbuch ein und legst die Rechnung
     dazu. Der Tankbetrag wird dann bei der nächsten Abrechnung gutgeschrieben.
+    Dies gilt nicht für unser elektrisches Auto, da dieses an unserer
+    eigenen Wallbox geladen wird.
 
   div.
     Einmal pro Quartal erhältst du dann eine Abrechnung über alle Fahrten.
