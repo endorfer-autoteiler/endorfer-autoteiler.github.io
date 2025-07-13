@@ -2,7 +2,7 @@ extends layout
 
 mixin pdf_download(name)
   li
-    a(href="documents/" + name + "-EnAT.pdf" download)
+    a(href="documents/"+name+"-EnAT.pdf" download=name+"-EnAT.pdf")
       img(src="img/file_pdf.png" alt="PDF ICON" height="25")
       | #{name}
 
