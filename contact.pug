@@ -31,6 +31,9 @@ block content
       input(name="honeypot" type="text" style="display: none;")
       input(name="subject" type="hidden" value="Anfrage zu EnAT")
       input(name="replyTo" type="hidden" value="@")
-      input(name="redirectTo" type="hidden" value="http://endorfer-autoteiler.github.io/mail-sent.html#message")
+      input(name="redirectTo" type="hidden" value="https://endorfer-autoteiler.github.io/mail-sent.html#message")
+      div.g-recaptcha(data-sitekey="6LdqISAsAAAAAKhlcvuZhMGvd0S6SsEHgqR5a02O")
 
       button(type="submit") Nachricht senden
+
+      script(src="https://www.google.com/recaptcha/api.js" async defer)
