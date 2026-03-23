@@ -153,10 +153,16 @@ a, a:visited {
     color: #707070;
 }
 
+#cars-description {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0 4%;
+}
+
 #cars-description > div {
-    float: left;
-    width: 40%;
-    margin: 0 2%
+    width: 20em;
+    max-width: 100%;
 }
 
 #cars-description > div > img {
@@ -170,11 +176,6 @@ a, a:visited {
     margin: 1rem;
 }
 
-#cars-description:after {
-  clear: both;
-  content: "";
-  display: table;
-}
 
 .car-name {
     font-weight: bold;
